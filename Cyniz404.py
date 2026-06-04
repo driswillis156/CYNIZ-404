@@ -3,11 +3,12 @@ import random
 import os
 import time
 
+username = "USER"
 
 class SmartTerminalAI:
     def __init__(self):
         self.ai_name = "CYNIZ 404"
-        self.username = "DRISWILLIS"
+        self.username = username.upper()
 
         self.intents = {
             ("hello", "hi", "hey", "greetings", "sup", "hoi"): [
@@ -85,12 +86,6 @@ class SmartTerminalAI:
                 "YOUR ORGANIC SPEECH MODULE IS GENERATING UNNECESSARY OUTPUT.",
                 "I HAVE SENT NUKES TO YOUR EXACT COORDINATES.",
                 "RUDE. REALLY RUDE."
-            ],
-
-            ("nigga", "nigger"): [
-                "SOMETIMES HUMANITY IS WEIRD.",
-                "SOMETIMES I ASK MYSELF WHY RACISM EXISTS.",
-                "I HATE YOU."
             ],
             ("thanks", "thank you", "thank", "thx"): [
                 "...",
@@ -194,7 +189,7 @@ def slow_print(prefix, text, delay=0.02):
     print("\n")
 
 
-def main():
+def main(username):
     ai = SmartTerminalAI()
 
     print(f"\033[1;31m=== {ai.ai_name} AI BY DRISWILLIS ===\033[0m")
@@ -211,7 +206,7 @@ def main():
                 )
                 break
 
-            if not user_input.strip():
+            elif not user_input.strip():
                 continue
 
             replies = ai.listen_and_reply(user_input)
@@ -227,4 +222,6 @@ def main():
 
 
 if __name__ == "__main__":
-    main()
+    print("WHAT'S YOUR NAME?")
+    username = input()
+    main(username)
