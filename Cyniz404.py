@@ -136,11 +136,12 @@ class SmartTerminalAI:
             ("are u stupid", "are you stupid", "ARE U STUPID", "ARE YOU STUPID"): [
                 "ATLEAST I DONT HAVE A DISGUSTING BIOLOGICAL BRAINROTTED MIND LIKE YOURS",
                 "YOU'RE SAYING THAT WHILE YOUR MIND IS FULL OF TUNG TUNG SAHUR"
-            ] ,
+            ],
             ("Haiku", "haiku", "haiku os", "haiku OS", "Haiku OS", "HAIKU", "HAIKU OS")
                 "FINALLY SOMETHING THAT I CAN APPRECIATE...",
                 "NEVER UNDERSTIMATE HAIKU  OR IM INSIDE YOUR HOUSE.",
-                "I WAS PROGRAMMED BY A PERSON THAT USED HAIKU"                                            
+                "I WAS PROGRAMMED BY A PERSON THAT USED HAIKU" 
+            ]                                               
         }
 
         self.default_responses = [
